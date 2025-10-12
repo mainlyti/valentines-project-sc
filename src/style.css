@@ -35,8 +35,16 @@ body {
 }
 
 .card-img {
-  width: 250px;
-  height: 230px;
+  height: 179px;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .btn {
@@ -61,6 +69,10 @@ section {
 
 .secondary-section {
   background: rgb(251, 192, 216);
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .center {
@@ -118,10 +130,6 @@ header a {
 
 main img {
   width: 550px;
-}
-
-.img-responsive {
-  max-width: 100%;
 }
 
 main {
@@ -242,5 +250,13 @@ footer a {
 
   footer p {
     font-size: 14px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
