@@ -4,13 +4,24 @@ body {
 }
 
 .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 header {
   background-image: linear-gradient(
-      rgba(138, 51, 65, 0.3),
-      rgba(255, 191, 202, 0.2)
+      rgba(138, 51, 65, 0.4),
+      rgba(248, 151, 167, 0.3)
     ),
     url("/images/valentine-header.jpg");
   background-repeat: no-repeat;
@@ -54,6 +65,46 @@ header a {
   display: inline-block;
   margin-top: 30px;
   border-radius: 4px;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(138, 51, 65, 0.7),
+      rgba(248, 151, 167, 0.9)
+    ),
+    url("/images/valentine-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  background-position: 0% 20%;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20x;
+  line-height: 1;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
 }
 
 @media (max-width: 960px) {
